@@ -1,0 +1,91 @@
+* {
+  /* formatear los valores por defecto */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: rgb(27, 26, 26);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  background-color: darkred;
+  padding: 70px;
+}
+h2 {
+  color: grey;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: darkred;
+  text-align: center;
+}
+p {
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px;
+}
+
+ul {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+footer {
+  color: black;
+  background-color: darkred;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.menu {
+  color: darkred;
+  padding: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: darkgrey;
+}
+
+.formulario {
+  padding-left: 20px;
+  background-color: darkgrey;
+}
+.imagenes {
+  text-align: center;
+  background-color: darkgrey;
+}
+.productos {
+  background-color: darkgrey;
+}
+.textos {
+  background-color: darkgrey;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+.menuitem {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #444;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#consulta {
+  width: 500px;
+  height: 100px;
+}
+#textomapa {
+  font-size: 20px;
+  text-align: center;
+}
+/* 0 --> 768 mobile 
+768 --> 1024 Tablet 
+1024 en adelante es desktop */
