@@ -6,20 +6,20 @@
 }
 
 h1 {
-  color: rgb(27, 26, 26);
+  color: #373a40;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
-  background-color: darkred;
+  background-color: #dc5f00;
   padding: 70px;
 }
 h2 {
-  color: grey;
+  color: #373a40;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: darkred;
+  background-color: #dc5f00;
   text-align: center;
 }
 p {
-  color: black;
+  color: #373a40;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 10px;
@@ -30,7 +30,7 @@ ul {
 }
 footer {
   color: black;
-  background-color: darkred;
+  background-color: #dc5f00;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
@@ -40,22 +40,22 @@ footer {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
-  background-color: darkgrey;
+  background-color: #686d76;
 }
 
 .formulario {
   padding-left: 20px;
-  background-color: darkgrey;
+  background-color: #686d76;
 }
 .imagenes {
   text-align: center;
-  background-color: darkgrey;
+  background-color: #eeeeee;
 }
 .productos {
-  background-color: darkgrey;
+  background-color: #686d76;
 }
 .textos {
-  background-color: darkgrey;
+  background-color: #eeeeee;
   font-size: 20px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
@@ -68,6 +68,8 @@ footer {
   padding: 20px;
   gap: 15px;
 }
+/* Este menu item era un ejemplo de flexbox que quise probar 
+   sacar en algún momento */
 .menuitem {
   display: flex;
   justify-content: space-between;
