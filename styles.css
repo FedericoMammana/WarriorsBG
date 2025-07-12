@@ -1,5 +1,6 @@
 * {
   /* formatear los valores por defecto */
+  /* https://colorhunt.co/palette/eeeeee686d76373a40dc5f00 colores nuevos */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -59,26 +60,19 @@ footer {
   font-size: 20px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-.sidebar {
-  width: 200px;
-  background-color: #333;
-  color: white;
+
+/* uso este container en productos con flexbox*/
+.container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  gap: 15px;
-}
-/* Este menu item era un ejemplo de flexbox que quise probar 
-   sacar en algún momento */
-.menuitem {
-  display: flex;
-  justify-content: space-between;
   padding: 10px;
   background-color: #444;
-  border-radius: 5px;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s;
+}
+.imagenes-flex {
+  width: 390px;
 }
 #consulta {
   width: 500px;
@@ -88,6 +82,13 @@ footer {
   font-size: 20px;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 /* 0 --> 768 mobile 
 768 --> 1024 Tablet 
 1024 en adelante es desktop */
