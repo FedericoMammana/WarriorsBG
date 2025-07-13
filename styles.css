@@ -7,14 +7,17 @@
 }
 
 h1 {
-  color: #373a40;
+  color: #eeeeee;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-align: center;
   background-color: #dc5f00;
   padding: 70px;
 }
+header h1 {
+  margin-bottom: 0;
+}
 h2 {
-  color: #373a40;
+  color: #eeeeee;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: #dc5f00;
   text-align: center;
@@ -35,11 +38,22 @@ footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
-.menu {
+.footer p {
+  margin-bottom: 0px;
+}
+.menu a {
+  display: inline-block;
+  background-color: red;
+  padding: 0 10px;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 20px;
   color: darkred;
-  padding: 20px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.menu {
+  padding: 20px;
   text-align: center;
   background-color: #686d76;
 }
@@ -66,9 +80,8 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-color: #444;
+  background-color: #686d76;
   text-align: center;
-  cursor: pointer;
   transition: background-color 0.3s;
 }
 .imagenes-flex {
@@ -82,6 +95,19 @@ footer {
   font-size: 20px;
   text-align: center;
 }
+/* aca empieza media query movile 
++
++
++
++
++
++
++
++
++
++
++
+*/
 @media (min-width: 768px) {
   .container {
     flex-direction: row;

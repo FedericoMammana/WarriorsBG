@@ -3,44 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Warriors Boxing Gym</title>
   </head>
   <body>
-    <h1>Warriors Boxing Gym</h1>
-    <!-- este es un nuevo sidebar para la pag de warriors 
-    <section class="sidebar">
-      <nav>
-        <a class="menuitem" href="quienes-somos.html">Quienes somos </a>
-        <a class="menuitem" href="ubicacion.html">Ubicación del Gym </a>
-        <a class="menuitem" href="productos.html">Nuestros productos</a>
-        <a class="menuitem" href="contacto.html">Contacto </a>
+    <header>
+      <h1>Warriors Boxing Gym</h1>
+      <!-- Nav con bootstrap 5.3-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#"
+              >Home <span class="sr-only">(Actual)</span></a
+            >
+            <a class="nav-item nav-link" href="./contacto.html">Contacto</a>
+            <a class="nav-item nav-link" href="./quienes-somos.html"
+              >Quienes Somos</a
+            >
+            <a class="nav-item nav-link" href="./productos.html">Productos</a>
+            <a class="nav-item nav-link" href="./ubicacion.html">Ubicación</a>
+          </div>
+        </div>
       </nav>
-    </section> -->
-
+    </header>
+    <!-- este es un nuevo sidebar para la pag de warriors -->
     <!-- Nav de Menu -->
 
+    <!-- div de imagenes que ahora lo voy a tratar de hacer un section -->
     <section>
-      <nav class="menu">
-        <a href="quienes-somos.html">Quienes somos </a>
-        <a href="ubicacion.html">Ubicación del Gym </a>
-        <a href="productos.html">Nuestros productos</a>
-        <a href="contacto.html">Contacto </a>
-      </nav>
-
-      <!-- div de imagenes que ahora lo voy a tratar de hacer un section -->
-      <div class="imagenes">
-        <h2>Aprendé boxeo de verdad</h2>
-        <p class="textos">
-          Hoy en día está muy de moda el boxeo, pero pocos te lo enseñan de
-          verdad... <br />
-          Vení a nuestro gym y llevate la experiencia que realmente necesitas.
-        </p>
-        <img src="./imagenes/fotos_lugar/foto-gym3.png" alt="" />
-      </div>
+      <main>
+        <div class="imagenes">
+          <h2>Aprendé boxeo de verdad</h2>
+          <p class="textos">
+            Hoy en día está muy de moda el boxeo, pero pocos te lo enseñan de
+            verdad... <br />
+            Vení a nuestro gym y llevate la experiencia que realmente necesitas.
+          </p>
+          <img
+            src="./imagenes/fotos_lugar/foto-gym3.png"
+            class="imagenes-flex"
+            alt=""
+          />
+        </div>
+      </main>
     </section>
     <footer>
       <p>Todos los derechos reservados a Warriors Boxing Gym</p>
     </footer>
+    <!-- Script de bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
