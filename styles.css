@@ -21,6 +21,7 @@ h2 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: #dc5f00;
   text-align: center;
+  margin-bottom: 0px;
 }
 p {
   color: #373a40;
@@ -88,7 +89,7 @@ footer {
   width: 390px;
 }
 #consulta {
-  width: 500px;
+  width: 250px;
   height: 100px;
 }
 #textomapa {
@@ -101,17 +102,14 @@ footer {
 +
 +
 +
-+
-+
-+
-+
-+
-+
 */
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
     justify-content: space-between;
+  }
+  #consulta {
+    width: 400px;
   }
 }
 
