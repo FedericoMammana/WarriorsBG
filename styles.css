@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #eee;
+}
+body,
+html {
+  height: 100%;
+}
+
 h1 {
   color: #eeeeee;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
@@ -39,8 +51,8 @@ footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
 }
-.footer p {
-  margin-bottom: 0px;
+footer p {
+  margin-bottom: 0;
 }
 .menu a {
   display: inline-block;
@@ -77,16 +89,25 @@ footer {
 }
 
 /* uso este container en productos con flexbox*/
-.container {
-  display: flex;
-  flex-direction: column;
+
+.mainGrid {
+  width: 100%;
+  background: #686d76;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
   padding: 10px;
   background-color: #686d76;
   text-align: center;
   transition: background-color 0.3s;
 }
+
 .imagenes-flex {
-  width: 390px;
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 1000px;
 }
 #consulta {
   width: 250px;
@@ -96,6 +117,45 @@ footer {
   font-size: 20px;
   text-align: center;
 }
+
+nav.bg-light {
+  background-color: #dc5f00 !important;
+}
+nav.navbar {
+  padding-left: 30px;
+}
+nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: rgba(255, 255, 255, 0.578);
+}
+.navbar-brand {
+  display: none;
+}
+header h1 {
+  background: #fff;
+  color: #dc5f00;
+}
+.imagenes h2 {
+  background: #eee;
+  color: #373a40;
+  padding-top: 20px;
+}
+header img,
+header h1 {
+  display: inline-block;
+}
+header {
+  text-align: center;
+  background-color: #fff;
+}
+
+section.first {
+  background-color: #eee;
+}
 /* aca empieza media query movile 
 +
 +
@@ -103,13 +163,21 @@ footer {
 +
 +
 */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .container {
     flex-direction: row;
     justify-content: space-between;
   }
   #consulta {
     width: 400px;
+  }
+
+  .imagenes-flex {
+    width: 100%;
+  }
+
+  .boxes {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
