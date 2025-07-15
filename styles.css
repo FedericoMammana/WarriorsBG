@@ -188,6 +188,10 @@ section.first {
   .boxes {
     grid-template-columns: 1fr 1fr;
   }
+  .box img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /* 0 --> 768 mobile 
