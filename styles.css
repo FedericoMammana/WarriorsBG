@@ -172,6 +172,7 @@ section.first {
 +
 +
 */
+
 @media (max-width: 768px) {
   .container {
     flex-direction: row;
@@ -193,7 +194,12 @@ section.first {
     height: 150px;
   }
 }
-
+@media (orientation: landscape) {
+  .box img {
+    width: 140px;
+    height: 140px;
+  }
+}
 /* 0 --> 768 mobile git
 768 --> 1024 Tablet 
 1024 en adelante es desktop */
