@@ -96,7 +96,7 @@ footer p {
 }
 .boxes {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 
   padding: 10px;
   background-color: #686d76;
@@ -155,6 +155,15 @@ header {
 
 section.first {
   background-color: #eee;
+}
+/* .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+.box img {
+  width: 200px;
+  height: 200px;
 }
 /* aca empieza media query movile 
 +
