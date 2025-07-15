@@ -110,7 +110,7 @@ footer p {
   max-width: 1000px;
 }
 #consulta {
-  width: 250px;
+  width: 400px;
   height: 100px;
 }
 #textomapa {
@@ -178,7 +178,7 @@ section.first {
     justify-content: space-between;
   }
   #consulta {
-    width: 400px;
+    width: 250px;
   }
 
   .imagenes-flex {
