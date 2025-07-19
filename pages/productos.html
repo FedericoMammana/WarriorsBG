@@ -9,12 +9,12 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Warriors Boxing Gym - Ubicación</title>
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Warriros Boxing Gym - Productos</title>
   </head>
   <body>
     <header>
-      <img src="./imagenes/fotos_lugar/warriors-logo-nue.png" border="0" />
+      <img src="../imagenes/fotos_lugar/warriors-logo-nue.png" border="0" />
       <h1>Warriors Boxing Gym</h1>
       <!-- Nav con bootstrap 5.3-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,48 +33,57 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#"
-              >Ubicación <span class="sr-only">(Actual)</span></a
+              >Productos <span class="sr-only">(Actual)</span></a
             >
-            <a class="nav-item nav-link" href="./index.html">Home</a>
+            <a class="nav-item nav-link" href="../index.html">Home</a>
             <a class="nav-item nav-link" href="./quienes-somos.html"
               >Quienes Somos</a
             >
             <a class="nav-item nav-link" href="./contacto.html">Contacto</a>
-            <a class="nav-item nav-link" href="./productos.html">Productos</a>
+            <a class="nav-item nav-link" href="./ubicacion.html">Ubicación</a>
           </div>
         </div>
       </nav>
     </header>
-    <section>
-      <div id="textomapa">
-        <p>
-          Podes encontrarnos en Google Maps
-          <a href="https://maps.app.goo.gl/YRHraV3UMSZsubePA" target="_blank"
-            >acá</a
-          >
-        </p>
-        <img
-          src="./imagenes/fotos_lugar/mapa.png"
-          class="imagenes-flex"
-          alt=""
-        />
-      </div>
-
-      <!-- Este div es para las imagenes del lugar-->
-      <div class="imagenes">
-        <h2>Conocé nuestras instalaciones</h2>
-        <img
-          src="./imagenes/fotos_lugar/foto-gym1.png"
-          class="imagenes-flex"
-          alt=""
-        />
-        <img
-          src="./imagenes/fotos_lugar/foto-gym2.png"
-          class="imagenes-flex"
-          alt=""
-        />
+    <h2>Podés encontrar estos productos</h2>
+    <!-- Con esto hacemos flexbox para el responsive -->
+    <section class="mainGrid">
+      <div class="boxes">
+        <div class="box">
+          <p>Remeras</p>
+          <img src="../imagenes/productos/remeras/remera-naranja.jpg" alt="" />
+        </div>
+        <div class="box">
+          <p>Musculosas</p>
+          <img src="../imagenes/productos/musculosas/musculosas.png" alt="" />
+        </div>
+        <div class="box">
+          <p>Guantes</p>
+          <img src="../imagenes/productos/guantes/guantes.png" alt="" />
+        </div>
+        <div class="box">
+          <p>Vendas</p>
+          <img src="../imagenes/productos/vendas/vendas.png" alt="" />
+        </div>
+        <div class="box">
+          <p>Cabezales</p>
+          <img src="../imagenes/productos/accesorios/cabezal.jpg" alt="" />
+        </div>
+        <div class="box">
+          <p>Bucales</p>
+          <img src="../imagenes/productos/accesorios/bucal.jpg" alt="" />
+        </div>
+        <div class="box">
+          <p>Bolsas</p>
+          <img src="../imagenes/productos/accesorios/bolsa.jpg" alt="" />
+        </div>
+        <div class="box">
+          <p>Kits</p>
+          <img src="../imagenes/productos/accesorios/kit-title.png" alt="" />
+        </div>
       </div>
     </section>
+
     <footer>
       <p>Todos los derechos reservados a Warriors Boxing Gym</p>
     </footer>
