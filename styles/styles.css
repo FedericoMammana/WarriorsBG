@@ -172,6 +172,10 @@ section.first {
   border-radius: 10%;
 }
 
+.dropdown-menu {
+  background-color: #dc5f00;
+  font-family: var(--bs-body-font-family);
+}
 /* aca empieza media query movile 
 +
 +
