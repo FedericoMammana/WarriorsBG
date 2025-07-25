@@ -54,7 +54,7 @@ footer {
 footer p {
   margin-bottom: 0;
 }
-.menu a {
+/* .menu a {
   display: inline-block;
   background-color: red;
   padding: 0 10px;
@@ -64,7 +64,7 @@ footer p {
   color: darkred;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
+} */
 .menu {
   padding: 20px;
   text-align: center;
@@ -161,20 +161,40 @@ section.first {
   justify-content: space-between;
 } */
 .box {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
+  align-items: center;
 }
-
+.box button {
+  margin-top: 32px;
+}
 .box img {
   width: 200px;
   height: 200px;
   border-color: #373a40;
   border-style: solid;
   border-radius: 10%;
+  transition: all 0.3s ease-out;
 }
-
+.box img:hover {
+  transform: scale(1.3);
+}
+.boton-comprar {
+  padding: 8px 20px;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease-in;
+}
+.boton-comprar:hover {
+  background-color: #78c841;
+  padding: 16px 40px;
+}
 .dropdown-menu {
   background-color: #dc5f00;
   font-family: var(--bs-body-font-family);
+  text-align: center;
 }
 /* aca empieza media query movile 
 +
