@@ -1,0 +1,12 @@
+@import "variables";
+.boton-comprar {
+  padding: 8px 20px;
+  background-color: variables.$color-fondo;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease-in;
+  &:hover {
+    background-color: variables.$color-bt-compra;
+    padding: 16px 40px;
+  }
+}

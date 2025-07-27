@@ -1,0 +1,101 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: variables.$color-fondo;
+}
+body,
+html {
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  background-color: variables.$color-fondo;
+
+  h1 {
+    background: variables.$color-fondo;
+    color: variables.$color-principal;
+    display: inline-block;
+    font-family: variables.$fuente-base;
+    padding: 70px; // probar esto por las dudas
+  }
+  img {
+    display: inline-block;
+  }
+}
+h2 {
+  color: variables.$color-fondo;
+  font-family: variables.$fuente-base;
+  text-align: center;
+  background-color: variables.$color-principal;
+  margin-bottom: 0;
+}
+p {
+  color: variables.$color-texto;
+  font-family: variables.$fuente-textos;
+}
+footer {
+  color: black;
+  background-color: variable.$color-principal;
+  font-family: variables.$fuente-footer;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+.formulario {
+  padding-left: 20px;
+  background-color: variables.$color-secundario;
+}
+.imagenes {
+  text-align: center;
+  background-color: variables.$color-fondo;
+
+  h2 {
+    background: variables.$color-fondo;
+    color: variables.$color-texto;
+    padding-top: 20px;
+  }
+}
+.imagenes-flex {
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 1000px;
+}
+.textos {
+  background-color: variables.$color-fondo;
+  font-size: 20px;
+  font-family: variables.$fuente-base;
+}
+section.first {
+  background-color: variables.$color-fondo;
+}
+#consulta {
+  width: 400px;
+  height: 100px;
+}
+#textomapa {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #consulta {
+    width: 250px;
+  }
+  #textomapa iframe {
+    width: 300px;
+    height: 228px;
+  }
+}

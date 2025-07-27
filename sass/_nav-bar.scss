@@ -1,0 +1,23 @@
+@import "variables";
+nav.bg-light {
+  background-color: variables.$color-principal !important;
+}
+nav.navbar {
+  padding-left: 30px;
+}
+nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: rgba(255, 255, 255, 0.578);
+}
+.navbar-brand {
+  display: none;
+}
+.dropdown-menu {
+  background-color: variables.$color-principal;
+  font-family: var(--bs-body-font-family);
+  text-align: center;
+}

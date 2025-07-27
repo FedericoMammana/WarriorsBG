@@ -79,9 +79,12 @@ footer p {
   text-align: center;
   background-color: #eeeeee;
 }
-.productos {
-  background-color: #686d76;
+.imagenes h2 {
+  background: #eee;
+  color: #373a40;
+  padding-top: 20px;
 }
+
 .textos {
   background-color: #eeeeee;
   font-size: 20px;
@@ -138,11 +141,7 @@ header h1 {
   background: #fff;
   color: #dc5f00;
 }
-.imagenes h2 {
-  background: #eee;
-  color: #373a40;
-  padding-top: 20px;
-}
+
 header img,
 header h1 {
   display: inline-block;
@@ -205,24 +204,19 @@ section.first {
 */
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  #consulta {
-    width: 250px;
-  }
-
-  .imagenes-flex {
-    width: 100%;
-  }
-
   .boxes {
     grid-template-columns: 1fr 1fr;
   }
   .box img {
     width: 150px;
     height: 150px;
+  }
+  #consulta {
+    width: 250px;
+  }
+  #textomapa iframe {
+    width: 300px;
+    height: 228px;
   }
 }
 @media (orientation: landscape) {
