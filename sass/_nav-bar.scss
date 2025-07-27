@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables";
 nav.bg-light {
   background-color: variables.$color-principal !important;
 }

@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables";
 
 * {
   margin: 0;
@@ -20,10 +20,10 @@ html {
 
 header {
   text-align: center;
-  background-color: variables.$color-fondo;
+  background-color: #fff;
 
   h1 {
-    background: variables.$color-fondo;
+    background-color: #fff;
     color: variables.$color-principal;
     display: inline-block;
     font-family: variables.$fuente-base;
@@ -43,10 +43,11 @@ h2 {
 p {
   color: variables.$color-texto;
   font-family: variables.$fuente-textos;
+  padding: 10px;
 }
 footer {
   color: black;
-  background-color: variable.$color-principal;
+  background-color: variables.$color-principal;
   font-family: variables.$fuente-footer;
   text-align: center;
 

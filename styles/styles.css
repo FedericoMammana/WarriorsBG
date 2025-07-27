@@ -1,6 +1,4 @@
 * {
-  /* formatear los valores por defecto */
-  /* https://colorhunt.co/palette/eeeeee686d76373a40dc5f00 colores nuevos */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,30 +9,37 @@ body {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background-color: #eee;
+  background-color: #eeeeee;
 }
+
 body,
 html {
   height: 100%;
 }
 
-h1 {
-  color: #eeeeee;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+header {
   text-align: center;
-  background-color: #dc5f00;
-  padding: 70px;
+  background-color: #fff;
 }
 header h1 {
-  margin-bottom: 0;
+  background-color: #fff;
+  color: #dc5f00;
+  display: inline-block;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 70px;
 }
+header img {
+  display: inline-block;
+}
+
 h2 {
   color: #eeeeee;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: #dc5f00;
   text-align: center;
-  margin-bottom: 0px;
+  background-color: #dc5f00;
+  margin-bottom: 0;
 }
+
 p {
   color: #373a40;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -42,9 +47,6 @@ p {
   padding: 10px;
 }
 
-ul {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
 footer {
   color: black;
   background-color: #dc5f00;
@@ -54,35 +56,26 @@ footer {
 footer p {
   margin-bottom: 0;
 }
-/* .menu a {
-  display: inline-block;
-  background-color: red;
-  padding: 0 10px;
-  margin: 0 20px;
-  text-decoration: none;
-  font-size: 20px;
-  color: darkred;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-} */
-.menu {
-  padding: 20px;
-  text-align: center;
-  background-color: #686d76;
-}
 
 .formulario {
   padding-left: 20px;
   background-color: #686d76;
 }
+
 .imagenes {
   text-align: center;
   background-color: #eeeeee;
 }
 .imagenes h2 {
-  background: #eee;
+  background: #eeeeee;
   color: #373a40;
   padding-top: 20px;
+}
+
+.imagenes-flex {
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 1000px;
 }
 
 .textos {
@@ -91,12 +84,41 @@ footer p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-/* uso este container en productos con flexbox*/
-
-.mainGrid {
-  width: 100%;
-  background: #686d76;
+section.first {
+  background-color: #eeeeee;
 }
+
+#consulta {
+  width: 400px;
+  height: 100px;
+}
+
+#textomapa {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #consulta {
+    width: 250px;
+  }
+  #textomapa iframe {
+    width: 300px;
+    height: 228px;
+  }
+}
+.boton-comprar {
+  padding: 8px 20px;
+  background-color: #eeeeee;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease-in;
+}
+.boton-comprar:hover {
+  background-color: #78c841;
+  padding: 16px 40px;
+}
+
 .boxes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -106,59 +128,6 @@ footer p {
   transition: background-color 0.3s;
 }
 
-.imagenes-flex {
-  width: 100%;
-  margin-bottom: 20px;
-  max-width: 1000px;
-}
-#consulta {
-  width: 400px;
-  height: 100px;
-}
-#textomapa {
-  font-size: 20px;
-  text-align: center;
-}
-
-nav.bg-light {
-  background-color: #dc5f00 !important;
-}
-nav.navbar {
-  padding-left: 30px;
-}
-nav .nav-link {
-  color: white;
-}
-
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
-  color: rgba(255, 255, 255, 0.578);
-}
-.navbar-brand {
-  display: none;
-}
-header h1 {
-  background: #fff;
-  color: #dc5f00;
-}
-
-header img,
-header h1 {
-  display: inline-block;
-}
-header {
-  text-align: center;
-  background-color: #fff;
-}
-
-section.first {
-  background-color: #eee;
-}
-/* .box {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
 .box {
   display: flex;
   flex-direction: column;
@@ -179,29 +148,6 @@ section.first {
 .box img:hover {
   transform: scale(1.3);
 }
-.boton-comprar {
-  padding: 8px 20px;
-  background-color: #eeeeee;
-  border: none;
-  border-radius: 12px;
-  transition: all 0.3s ease-in;
-}
-.boton-comprar:hover {
-  background-color: #78c841;
-  padding: 16px 40px;
-}
-.dropdown-menu {
-  background-color: #dc5f00;
-  font-family: var(--bs-body-font-family);
-  text-align: center;
-}
-/* aca empieza media query movile 
-+
-+
-+
-+
-+
-*/
 
 @media (max-width: 768px) {
   .boxes {
@@ -211,13 +157,6 @@ section.first {
     width: 150px;
     height: 150px;
   }
-  #consulta {
-    width: 250px;
-  }
-  #textomapa iframe {
-    width: 300px;
-    height: 228px;
-  }
 }
 @media (orientation: landscape) {
   .box img {
@@ -225,6 +164,31 @@ section.first {
     height: 140px;
   }
 }
-/* 0 --> 768 mobile git
-768 --> 1024 Tablet 
-1024 en adelante es desktop */
+nav.bg-light {
+  background-color: #dc5f00 !important;
+}
+
+nav.navbar {
+  padding-left: 30px;
+}
+
+nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: rgba(255, 255, 255, 0.578);
+}
+
+.navbar-brand {
+  display: none;
+}
+
+.dropdown-menu {
+  background-color: #dc5f00;
+  font-family: var(--bs-body-font-family);
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
