@@ -190,10 +190,28 @@ nav .nav-link {
   font-family: var(--bs-body-font-family);
   text-align: center;
 }
-/* esto lo vamos a hacer en sass */
 
 .animate-back-in-right {
   animation: backInRight 1s ease-out forwards;
+}
+
+@keyframes backInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px) scale(0.7);
+  }
+  60% {
+    opacity: 0.5;
+    transform: translateX(-10px) scale(1.05);
+  }
+  80% {
+    opacity: 0.75;
+    transform: translateX(10px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
 }
 .animate-back-in-left {
   animation: backInLeft 1s ease-out forwards;
@@ -202,33 +220,38 @@ nav .nav-link {
 @keyframes backInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-1000px) scale(0.7);
+    transform: translateX(-30px) scale(0.7);
   }
   60% {
-    opacity: 1;
+    opacity: 0.5;
     transform: translateX(30px) scale(1.05);
   }
   80% {
-    transform: translateX(-10px) scale(0.95);
-  }
-  100% {
-    transform: translateX(0) scale(1);
-  }
-}
-@keyframes backInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(1000px) scale(0.7);
-  }
-  60% {
-    opacity: 1;
-    transform: translateX(-30px) scale(1.05);
-  }
-  80% {
+    opacity: 0.75;
     transform: translateX(10px) scale(0.95);
   }
   100% {
+    opacity: 1;
     transform: translateX(0) scale(1);
   }
 }
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #eeeeee;
+  border-top: 6px solid #dc5f00;
+  border-radius: 50%;
+  animation: girar 1s linear infinite;
+  margin-top: 10px;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
