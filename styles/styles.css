@@ -190,5 +190,45 @@ nav .nav-link {
   font-family: var(--bs-body-font-family);
   text-align: center;
 }
+/* esto lo vamos a hacer en sass */
 
+.animate-back-in-right {
+  animation: backInRight 1s ease-out forwards;
+}
+.animate-back-in-left {
+  animation: backInLeft 1s ease-out forwards;
+}
+
+@keyframes backInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px) scale(0.7);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px) scale(1.05);
+  }
+  80% {
+    transform: translateX(-10px) scale(0.95);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+@keyframes backInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(1000px) scale(0.7);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px) scale(1.05);
+  }
+  80% {
+    transform: translateX(10px) scale(0.95);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
 /*# sourceMappingURL=styles.css.map */
