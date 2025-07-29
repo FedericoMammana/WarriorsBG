@@ -42,8 +42,7 @@ h2 {
 
 p {
   color: #373a40;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 10px;
 }
 
@@ -96,6 +95,11 @@ section.first {
 #textomapa {
   font-size: 20px;
   text-align: center;
+}
+
+.icono {
+  width: 20px;
+  height: 18px;
 }
 
 @media (max-width: 768px) {
@@ -242,7 +246,6 @@ nav .nav-link {
   border-top: 6px solid #dc5f00;
   border-radius: 50%;
   animation: girar 1s linear infinite;
-  margin-top: 10px;
 }
 
 @keyframes girar {
