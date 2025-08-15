@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -42,8 +43,13 @@ h2 {
 
 p {
   color: #373a40;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   padding: 10px;
+}
+
+main {
+  background-color: #dc5f00;
 }
 
 footer {
@@ -54,6 +60,30 @@ footer {
 }
 footer p {
   margin-bottom: 0;
+}
+
+input {
+  border: 2px solid #ccc; /* Borde */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* Fuente */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+textarea {
+  width: 400px; /* Ancho deseado */
+  height: 100px; /* Altura deseada */
+  border: 2px solid #ccc; /* Borde */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; /* Fuente */
+  font-size: 16px; /* Tamaño de fuente */
+  overflow: auto; /* Agrega barras de desplazamiento si el contenido es más grande que el textarea */
+}
+
+input:hover {
+  border-color: #dc5f00;
+}
+
+/*  Estilo para bordes al pasar el ratón */
+textarea:hover {
+  border-color: #dc5f00;
 }
 
 .formulario {
@@ -121,6 +151,17 @@ section.first {
 .boton-comprar:hover {
   background-color: #78c841;
   padding: 16px 40px;
+}
+
+.boton-enviar {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #eeeeee;
+  transition: all 0.3 ease-in;
+}
+.boton-enviar:hover {
+  background-color: #dc5f00;
 }
 
 .boxes {

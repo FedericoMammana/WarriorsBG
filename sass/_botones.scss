@@ -10,3 +10,13 @@
     padding: 16px 40px;
   }
 }
+.boton-enviar {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: variables.$color-fondo;
+  transition: all 0.3 ease-in;
+  &:hover {
+    background-color: variables.$color-principal;
+  }
+}

@@ -45,6 +45,9 @@ p {
   font-family: variables.$fuente-textos;
   padding: 10px;
 }
+main {
+  background-color: variables.$color-principal;
+}
 footer {
   color: black;
   background-color: variables.$color-principal;
@@ -54,6 +57,30 @@ footer {
   p {
     margin-bottom: 0;
   }
+}
+input {
+  border: 2px solid #ccc; /* Borde */
+  // padding: 10px; /* Espacio interno */
+  font-family: variables.$fuente-base; /* Fuente */
+  font-size: 16px; /* Tamaño de fuente */
+}
+textarea {
+  width: 400px; /* Ancho deseado */
+  height: 100px; /* Altura deseada */
+  border: 2px solid #ccc; /* Borde */
+  // padding: 10px; /* Espacio interno */
+  font-family: variables.$fuente-base; /* Fuente */
+  font-size: 16px; /* Tamaño de fuente */
+  // resize: vertical; /* Permite solo redimensionamiento vertical */
+  overflow: auto; /* Agrega barras de desplazamiento si el contenido es más grande que el textarea */
+}
+
+input:hover {
+  border-color: variables.$color-principal;
+}
+/*  Estilo para bordes al pasar el ratón */
+textarea:hover {
+  border-color: variables.$color-principal;
 }
 .formulario {
   padding-left: 20px;
